@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.input-border {
+    @apply border border-darkgrayish-violet p-3 rounded-lg outline-none placeholder:opacity-70 h-10;
+
+}
+
+.input-border:focus {
+    border-image: linear-gradient(to right, rgb(100, 72, 254), rgb(96, 5, 148));
+    border-image-slice: 1;
+    border-width: 2px;
+}
+
+.input-box {
+    @apply text-sm my-6 tracking-widest sm:text-xs sm:my-6 h-14;
+}
+
+.input-box:first {
+    @apply mt-0 mb-5;
+}
+
+.card-info-text{
+    @apply top-[80%] opacity-70 text-xs;
+}
